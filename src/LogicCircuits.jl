@@ -26,7 +26,11 @@ include("sdd/sdds.jl")
 include("sdd/sdd_functions.jl")
 include("sdd/apply.jl")
 
-include("LoadSave/LoadSave.jl")
-@reexport using .LoadSave
+include("io/vtree_load.jl")
+include("io/vtree_save.jl")
+include("io/circuit_load.jl")
+include("io/circuit_save.jl")
+include("io/data_load.jl")
+include("io/plot.jl")
 
 end
